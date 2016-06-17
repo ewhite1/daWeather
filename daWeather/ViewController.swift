@@ -33,7 +33,8 @@ class ViewController: UIViewController {
                 }
                
                 // todo- grab the array of main, and print temp! doing this forcefully is a bad idea. But
-                // I need to 
+                // I need to grab it out as a double. Also when printing it, convert it. I can do this with
+                // nsstring to format it out. 
         }
         
      }
