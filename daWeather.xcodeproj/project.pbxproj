@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F7D0C9B5F5D7E22466A8805 /* Pods_daWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE9375FF9C04CC0081EF2A2 /* Pods_daWeather.framework */; };
 		ECC655561D13D9D500358C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC655551D13D9D500358C66 /* AppDelegate.swift */; };
 		ECC655581D13D9D500358C66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC655571D13D9D500358C66 /* ViewController.swift */; };
 		ECC6555B1D13D9D500358C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC655591D13D9D500358C66 /* Main.storyboard */; };
 		ECC6555D1D13D9D500358C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC6555C1D13D9D500358C66 /* Assets.xcassets */; };
 		ECC655601D13D9D500358C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC6555E1D13D9D500358C66 /* LaunchScreen.storyboard */; };
+		ECC6556C1D13E53500358C66 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC6556B1D13E53500358C66 /* keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7BE9375FF9C04CC0081EF2A2 /* Pods_daWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFBEE7035081996465177EE2 /* Pods-daWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-daWeather/Pods-daWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		D4FCD4ECD16CD6D13A662045 /* Pods-daWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-daWeather/Pods-daWeather.release.xcconfig"; sourceTree = "<group>"; };
 		ECC655521D13D9D500358C66 /* daWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECC655551D13D9D500358C66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECC655571D13D9D500358C66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		ECC6555C1D13D9D500358C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECC6555F1D13D9D500358C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC655611D13D9D500358C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECC6556B1D13E53500358C66 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7D0C9B5F5D7E22466A8805 /* Pods_daWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4FC2662D3BB011A7827FAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEE7035081996465177EE2 /* Pods-daWeather.debug.xcconfig */,
+				D4FCD4ECD16CD6D13A662045 /* Pods-daWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4760D53C777BFC1293A6284 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9375FF9C04CC0081EF2A2 /* Pods_daWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ECC655491D13D9D500358C66 = {
 			isa = PBXGroup;
 			children = (
 				ECC655541D13D9D500358C66 /* daWeather */,
 				ECC655531D13D9D500358C66 /* Products */,
+				3F4FC2662D3BB011A7827FAE /* Pods */,
+				A4760D53C777BFC1293A6284 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,47 @@
 		ECC655541D13D9D500358C66 /* daWeather */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6556A1D13DB1400358C66 /* Resources */,
+				ECC655691D13DAFB00358C66 /* Controller */,
+				ECC655681D13DAF100358C66 /* view */,
+				ECC655671D13DAE800358C66 /* model */,
 				ECC655551D13D9D500358C66 /* AppDelegate.swift */,
-				ECC655571D13D9D500358C66 /* ViewController.swift */,
-				ECC655591D13D9D500358C66 /* Main.storyboard */,
 				ECC6555C1D13D9D500358C66 /* Assets.xcassets */,
-				ECC6555E1D13D9D500358C66 /* LaunchScreen.storyboard */,
 				ECC655611D13D9D500358C66 /* Info.plist */,
 			);
 			path = daWeather;
+			sourceTree = "<group>";
+		};
+		ECC655671D13DAE800358C66 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		ECC655681D13DAF100358C66 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				ECC655591D13D9D500358C66 /* Main.storyboard */,
+				ECC6555E1D13D9D500358C66 /* LaunchScreen.storyboard */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		ECC655691D13DAFB00358C66 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ECC655571D13D9D500358C66 /* ViewController.swift */,
+				ECC6556B1D13E53500358C66 /* keys.plist */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ECC6556A1D13DB1400358C66 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECC655641D13D9D500358C66 /* Build configuration list for PBXNativeTarget "daWeather" */;
 			buildPhases = (
+				FFF2E15FD779A173D1738D0D /* [CP] Check Pods Manifest.lock */,
 				ECC6554E1D13D9D500358C66 /* Sources */,
 				ECC6554F1D13D9D500358C66 /* Frameworks */,
 				ECC655501D13D9D500358C66 /* Resources */,
+				C1A55538FA2974CCE0EB8A27 /* [CP] Embed Pods Frameworks */,
+				B01E7845ED5674417D3A6009 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECC6556C1D13E53500358C66 /* keys.plist in Resources */,
 				ECC655601D13D9D500358C66 /* LaunchScreen.storyboard in Resources */,
 				ECC6555D1D13D9D500358C66 /* Assets.xcassets in Resources */,
 				ECC6555B1D13D9D500358C66 /* Main.storyboard in Resources */,
@@ -130,6 +193,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B01E7845ED5674417D3A6009 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daWeather/Pods-daWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A55538FA2974CCE0EB8A27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-daWeather/Pods-daWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFF2E15FD779A173D1738D0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECC6554E1D13D9D500358C66 /* Sources */ = {
@@ -250,6 +361,7 @@
 		};
 		ECC655651D13D9D500358C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFBEE7035081996465177EE2 /* Pods-daWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -264,6 +376,7 @@
 		};
 		ECC655661D13D9D500358C66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4FCD4ECD16CD6D13A662045 /* Pods-daWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -295,6 +408,7 @@
 				ECC655661D13D9D500358C66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

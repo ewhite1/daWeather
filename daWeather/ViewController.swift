@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // json test code first this will be removed in the main master
+        let urlString = "http://"
     }
 
     override func didReceiveMemoryWarning() {
