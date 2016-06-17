@@ -14,6 +14,7 @@
 		ECC6555D1D13D9D500358C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECC6555C1D13D9D500358C66 /* Assets.xcassets */; };
 		ECC655601D13D9D500358C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECC6555E1D13D9D500358C66 /* LaunchScreen.storyboard */; };
 		ECC6556C1D13E53500358C66 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECC6556B1D13E53500358C66 /* keys.plist */; };
+		ECC6556F1D14045000358C66 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC6556E1D14045000358C66 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ECC6555F1D13D9D500358C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECC655611D13D9D500358C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECC6556B1D13E53500358C66 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
+		ECC6556E1D14045000358C66 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		ECC655541D13D9D500358C66 /* daWeather */ = {
 			isa = PBXGroup;
 			children = (
+				ECC6556D1D14043800358C66 /* Utils */,
 				ECC6556A1D13DB1400358C66 /* Resources */,
 				ECC655691D13DAFB00358C66 /* Controller */,
 				ECC655681D13DAF100358C66 /* view */,
@@ -121,6 +124,14 @@
 			children = (
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		ECC6556D1D14043800358C66 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6556E1D14045000358C66 /* Constants.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +260,7 @@
 			files = (
 				ECC655581D13D9D500358C66 /* ViewController.swift in Sources */,
 				ECC655561D13D9D500358C66 /* AppDelegate.swift in Sources */,
+				ECC6556F1D14045000358C66 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

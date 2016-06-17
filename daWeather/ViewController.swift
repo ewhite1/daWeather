@@ -7,20 +7,36 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+      
+      
+        
         // json test code first this will be removed in the main master
-        let urlString = "http://"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+        
+        let urlString = "\(URL_BASE)\(URL_ZIP)\(URL_UNITS)\(API_KEY)"
+        Alamofire.request(.GET, urlString)
+        .responseJSON { response in
+        let result = response.result
+         
+            if let dict = result.value as? Dictionary<String, AnyObject> {
+                if let name = dict["name"] as? String {
+                    print(name)
+                }
+                if let main = dict["main"] as AnyObject! {
+                    print(main)
+                }
+               
+                // todo- grab the array of main, and print temp! doing this forcefully is a bad idea. But
+                // I need to 
+        }
+        
+     }
+  }
 }
 

@@ -16,15 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        var keys: NSDictionary?
-        
-        if let path = NSBundle.mainBundle().pathForResource("Keys", ofType: "plist") {
-            keys = NSDictionary(contentsOfFile: path)
-        }
-        if let dict = keys {
-            let applicationId = dict["applicationId"] as? String
-        }
-        return true
+                return true
     }
 
     func applicationWillResignActive(application: UIApplication) {
